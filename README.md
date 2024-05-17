@@ -28,9 +28,9 @@ torch_scatter==2.1.1
 ```
 
 ## Reproducibility
-The generated graphs are saved in the folder `./saved_ours`; you can directly load them to test the performance.
+The generated graphs are saved in the folder `./saved_ours`. You can directly load them to test the performance.
 
-For Table 1, run `bash ./script/main_table.sh`.
+- For Table 1, run `bash ./script/main_table.sh`.
 
 It should be noted that, for each dataset and each condensation architecture, the training trajectory buffer should only be produced one time. E.g., for citeseer condensed by SGC, you just need to run the following command one time:
 ```bash
@@ -45,11 +45,11 @@ python condense.py --test --gpu_id=0 --dataset=citeseer --expert_net=sgc2-lr3-wt
 
 and add `--save` if you want to save your synthetic graphs. `student_epochs` denotes `N` in the paper and `expert_epochs` denotes `M` in the paper. Both of them are hyperparameters for multi-step gradient matching.
 
-For Table 2, run `bash ./script/dif_test.sh`.
+- For Table 2, run `bash ./script/dif_test.sh`.
 
-For Table 3, run `bash ./script/dif_condense.sh`.
+- For Table 3, run `bash ./script/dif_condense.sh`.
 
-For ablation study and Table 4, run `bash ./script/ablation.sh`.
+- For ablation study and Table 4, run `bash ./script/ablation.sh`.
 
 ## Citation
 
